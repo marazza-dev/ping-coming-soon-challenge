@@ -6,10 +6,12 @@ $clr-primary: hsl(223 87% 63%);
 $clr-secondary-pale: hsl(223 100% 88%);
 $clr-secondary-light: hsl(354 100% 66%);
 $clr-neutral-gray: hsl(0 0% 59%);
-$clr-neutral-blue: hsl(209 33% 12%);
+$clr-neutral-blue: hsla(209 33% 12%);
 // Font
 $ff-primary: "Libre Franklin", sans-serif;
 $fw-light: 300;
 $fw-semi-bold: 600;
 $fw-bold: 700;
 $fs-primary: 20px;
+// Box Shadow
+$box-shadow: 0px 10px 15px 2px hsl(223 87% 63% / 0.75);
