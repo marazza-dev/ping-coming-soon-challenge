@@ -6,11 +6,11 @@ import { Header, Form, Footer } from "./components";
 
 const App = () => {
   return (
-    <main>
-      <img src={logo} alt='ping brand logo' />
+    <main className='container'>
+      <img src={logo} alt='ping brand logo' className='logo' />
       <Header />
       <Form />
-      <img src={heroImg} alt='illustrated dashboard' />
+      <img src={heroImg} alt='illustrated dashboard' className='hero-image' />
       <Footer />
     </main>
   );

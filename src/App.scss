@@ -48,3 +48,13 @@ textarea,
 select {
   font: inherit;
 }
+
+.container {
+  @include flex(center, center);
+  flex-direction: column;
+  padding: 2rem;
+}
+.logo {
+  width: 4rem;
+  margin: 3rem 0;
+}
