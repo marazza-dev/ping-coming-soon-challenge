@@ -1,0 +1,47 @@
+@use "../../scss" as *;
+
+.form__container {
+  @include flex(center, center);
+  flex-direction: column;
+  margin: 1rem 0 2rem 0;
+  gap: 0.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.form__email {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid $clr-secondary-pale;
+  padding: 0.5rem 1rem;
+
+  &::placeholder {
+    font-size: 0.75rem;
+    color: $clr-neutral-gray;
+    opacity: 0.5;
+  }
+}
+
+.btn {
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  background-color: $clr-primary;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: $fw-light;
+  box-shadow: $box-shadow;
+
+  &.success__btn {
+    max-width: 15rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.success__message {
+  font-size: $fs-primary;
+  margin: 2rem 0;
+  color: $clr-success;
+}
