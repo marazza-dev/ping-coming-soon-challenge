@@ -13,24 +13,22 @@ const FormSubscribe = ({ submitForm }) => {
   return (
     <>
       <form onSubmit={handleSubmit} noValidate>
-        <div className='form__container'>
-          <label htmlFor='email'></label>
-          <input
-            placeholder='        Your email address...'
-            type='email'
-            name='email'
-            id='email'
-            className='form__email'
-            value={values.email}
-            onChange={handleChange}
-            onFocus={(e) => (e.target.placeholder = "")}
-          />
+        <label htmlFor='email'></label>
+        <input
+          placeholder='      Your email address...'
+          type='email'
+          name='email'
+          id='email'
+          className={`form__email ${errors.email ? "danger" : ""}`}
+          value={values.email}
+          onChange={handleChange}
+          onFocus={(e) => (e.target.placeholder = "")}
+        />
 
-          {errors.email && <p className='error'>{errors.email}</p>}
-          <button type='submit' className='btn btn--valid'>
-            Notify Me
-          </button>
-        </div>
+        {errors.email && <span className='danger'>{errors.email}</span>}
+        <button type='submit' className='btn btn--valid'>
+          Notify Me
+        </button>
       </form>
     </>
   );

@@ -1,25 +1,42 @@
 @use "../../scss" as *;
 
-.form__container {
+form {
+  width: 100%;
   @include flex(center, center);
   flex-direction: column;
   margin: 1rem 0 2rem 0;
-  gap: 0.5rem;
-  width: 100%;
+  gap: 1rem;
   position: relative;
+  padding-inline: 0.5rem;
+  max-width: 30rem;
 }
 
 .form__email {
   width: 100%;
   border-radius: 30px;
   border: 1px solid $clr-secondary-pale;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
 
   &::placeholder {
     font-size: 0.75rem;
     color: $clr-neutral-gray;
     opacity: 0.5;
   }
+
+  &.danger {
+    border: none;
+    outline: 1px solid $clr-secondary-light;
+  }
+}
+
+span.danger {
+  font-size: 0.75rem;
+  font-family: $ff-primary;
+  font-weight: $fw-light;
+  font-style: italic;
+  color: $clr-secondary-light;
+  margin-bottom: 1rem;
 }
 
 .btn {
@@ -33,6 +50,10 @@
   font-size: 0.95rem;
   font-weight: $fw-light;
   box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: rgb(101 138 243);
+  }
 
   &.success__btn {
     max-width: 15rem;
