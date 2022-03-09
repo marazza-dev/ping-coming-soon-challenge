@@ -10,7 +10,12 @@ const App = () => {
       <img src={logo} alt='ping brand logo' className='logo' />
       <Header />
       <Form />
-      <img src={heroImg} alt='illustrated dashboard' className='hero-image' />
+      <img
+        src={heroImg}
+        alt='illustrated dashboard'
+        className='hero-image'
+        sizes='(min-width: 40em) 80vw, 100vw'
+      />
       <Footer />
     </main>
   );

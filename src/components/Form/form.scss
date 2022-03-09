@@ -5,10 +5,15 @@ form {
   @include flex(center, center);
   flex-direction: column;
   margin: 1rem 0 2rem 0;
-  gap: 1rem;
   position: relative;
+  gap: 1rem;
   padding-inline: 0.5rem;
   max-width: 30rem;
+
+  @include desktop {
+    flex-direction: row;
+    max-width: 50%;
+  }
 }
 
 .form__email {
@@ -37,6 +42,12 @@ span.danger {
   font-style: italic;
   color: $clr-secondary-light;
   margin-bottom: 1rem;
+  @include desktop {
+    position: absolute;
+    bottom: -45%;
+    left: 8%;
+    margin: 0;
+  }
 }
 
 .btn {
@@ -50,6 +61,10 @@ span.danger {
   font-size: 0.95rem;
   font-weight: $fw-light;
   box-shadow: $box-shadow;
+
+  @include desktop {
+    max-width: 33%;
+  }
 
   &:hover {
     background-color: rgb(101 138 243);
