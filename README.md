@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/pingcomingsoon-challenge-with-react-sass-and-vite-tKuy4mVXR](https://www.frontendmentor.io/solutions/pingcomingsoon-challenge-with-react-sass-and-vite-tKuy4mVXR)
 - Live Site URL: [https://marazza-dev.github.io/ping-coming-soon-challenge](https://marazza-dev.github.io/ping-coming-soon-challenge)
 
 ## My process
